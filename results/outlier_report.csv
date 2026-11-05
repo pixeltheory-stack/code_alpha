@@ -1,0 +1,5 @@
+Column,Outlier Count,Lower Limit,Upper Limit
+age,39,1.0,57.0
+fare,102,-31.039025,73.198375
+sibsp,39,-1.5,2.5
+parch,15,-1.5,2.5

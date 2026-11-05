@@ -1,0 +1,16 @@
+,Missing Values,Missing Percentage,Data Type
+survived,0,0.0,int64
+pclass,0,0.0,int64
+sex,0,0.0,str
+age,177,19.865319865319865,float64
+sibsp,0,0.0,int64
+parch,0,0.0,int64
+fare,0,0.0,float64
+embarked,2,0.22446689113355783,str
+class,0,0.0,str
+who,0,0.0,str
+adult_male,0,0.0,bool
+deck,688,77.21661054994388,str
+embark_town,2,0.22446689113355783,str
+alive,0,0.0,str
+alone,0,0.0,bool

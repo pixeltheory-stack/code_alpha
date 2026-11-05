@@ -1,0 +1,67 @@
+CODEALPHA - TASK 2
+EXPLORATORY DATA ANALYSIS REPORT
+==================================================
+
+1. DATASET OVERVIEW
+Original Dataset Shape: (891, 15)
+Cleaned Dataset Shape: (784, 15)
+
+2. DATA QUALITY
+             Missing Values  Missing Percentage Data Type
+survived                  0            0.000000     int64
+pclass                    0            0.000000     int64
+sex                       0            0.000000       str
+age                     177           19.865320   float64
+sibsp                     0            0.000000     int64
+parch                     0            0.000000     int64
+fare                      0            0.000000   float64
+embarked                  2            0.224467       str
+class                     0            0.000000       str
+who                       0            0.000000       str
+adult_male                0            0.000000      bool
+deck                    688           77.216611       str
+embark_town               2            0.224467       str
+alive                     0            0.000000       str
+alone                     0            0.000000      bool
+
+3. SURVIVAL ANALYSIS
+Overall Survival Rate: 41.2%
+
+Survival Rate by Gender:
+sex
+female    74.061433
+male      21.588595
+Name: survived, dtype: float64
+
+Survival Rate by Passenger Class:
+class
+First     63.084112
+Second    50.909091
+Third     25.679012
+Name: survived, dtype: float64
+
+4. CORRELATION MATRIX
+          survived    pclass       age     sibsp     parch      fare
+survived  1.000000 -0.332658 -0.079184 -0.036589  0.070307  0.246769
+pclass   -0.332658  1.000000 -0.342986  0.088014  0.040296 -0.549216
+age      -0.079184 -0.342986  1.000000 -0.279431 -0.183777  0.091315
+sibsp    -0.036589  0.088014 -0.279431  1.000000  0.381433  0.135147
+parch     0.070307  0.040296 -0.183777  0.381433  1.000000  0.191942
+fare      0.246769 -0.549216  0.091315  0.135147  0.191942  1.000000
+
+5. OUTLIER ANALYSIS
+  Column  Outlier Count  Lower Limit  Upper Limit
+0    age             39     1.000000    57.000000
+1   fare            102   -31.039025    73.198375
+2  sibsp             39    -1.500000     2.500000
+3  parch             15    -1.500000     2.500000
+
+6. HYPOTHESIS TESTING
+Chi-Square Value: 206.3995178801755
+P-Value: 8.383408590582411e-47
+There is a significant relationship between gender and survival.
+
+7. KEY FINDINGS
+Overall Survival Rate: 41.2%
+Average Age: 29.65
+Average Fare: 34.71
